@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -5,6 +7,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Kumbh Sans", ...defaultTheme.fontFamily.sans],
+    },
     screens: {
       xs: "375px",
       // => @media (min-width: 375px) { ... }
@@ -26,12 +31,9 @@ module.exports = {
       VeryDarkBlue: "hsl(237, 12%, 33%)",
       DarkGrayishBlue: "hsl(240, 6%, 50%)",
       LightGrayishBlue: "hsl(240, 5%, 91%)",
+      white: "hsl(0, 0%, 100%)",
     },
-    extend: {
-      fontFamily: {
-        sans: ["Kumbh Sans", ...defaultTheme.fontFamily.sans],
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
