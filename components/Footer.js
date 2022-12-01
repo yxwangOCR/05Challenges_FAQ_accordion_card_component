@@ -5,6 +5,7 @@ const Footer = () => {
       <a
         href='https://www.frontendmentor.io?ref=challenge'
         target='_blank'
+        rel='noreferrer'
         className='hover:text-SoftRed'>
         Frontend Mentor
       </a>
@@ -13,6 +14,7 @@ const Footer = () => {
       <a
         href='https://portfolio-yixuan-wang.vercel.app/'
         target='_blank'
+        rel='noreferrer'
         className='hover:text-SoftRed'>
         Yixuan Wang
       </a>
