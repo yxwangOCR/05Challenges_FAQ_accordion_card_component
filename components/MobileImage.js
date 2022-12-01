@@ -3,7 +3,7 @@ import ImageMobile from "../public/illustration-woman-online-mobile.svg";
 
 const MobileImage = () => {
   return (
-    <div>
+    <div className="p-0 m-0">
       <Image
         src={ImageMobile}
         alt='Women with computer-mobile'

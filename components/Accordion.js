@@ -6,9 +6,9 @@ const Accordion = ({ title, content }) => {
   const [active, setActive] = useState(false);
 
   return (
-    <div>
+    <div className='m-0 p-0 w-[260px] md:w-[350px]'>
       <div className='flex flex-col'>
-        <div className='flex justify-between my-2'>
+        <div className='flex justify-between items-center gap-3 my-2'>
           <p
             className={
               active
@@ -33,13 +33,13 @@ const Accordion = ({ title, content }) => {
         <span
           className={
             active
-              ? "border-b-2 border-LightGrayishBlue relative top-[4rem]"
-              : "border-b-2 border-LightGrayishBlue relative top-[1rem]"
+              ? "border-b-2 border-LightGrayishBlue relative top-[50px]"
+              : "border-b-2 border-LightGrayishBlue relative top-[8px]"
           }></span>
       </div>
       {active && (
         <p
-          className='text-DarkGrayishBlue text-xs w-full py-2 cursor-pointer'
+          className='text-DarkGrayishBlue text-[0.6rem] w-[15rem] md:w-[20rem] p-0 m-0 cursor-pointer'
           onClick={() => setActive(!active)}>
           {content}
         </p>

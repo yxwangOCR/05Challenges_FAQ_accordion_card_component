@@ -4,9 +4,13 @@ import Box from "../public/illustration-box-desktop.svg";
 
 const DesktopImage = () => {
   return (
-    <div>
-      <Image src={ImageDesktop} alt='Desktop-woman-online' />
-      <Image src={Box} alt='box' />
+    <div className='p-0 m-0'>
+      <Image
+        src={ImageDesktop}
+        alt='Desktop-woman-online'
+        className='relative right-[6rem] top-0'
+      />
+      <Image src={Box} alt='box' className='absolute' />
     </div>
   );
 };
