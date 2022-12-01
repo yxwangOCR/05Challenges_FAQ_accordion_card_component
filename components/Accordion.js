@@ -30,12 +30,12 @@ const Accordion = ({ title, content }) => {
             }
           />
         </div>
-        <span
+        <hr
           className={
             active
-              ? "border-b-2 border-LightGrayishBlue relative top-[50px]"
-              : "border-b-2 border-LightGrayishBlue relative top-[8px]"
-          }></span>
+              ? "border-b-1 border-LightGrayishBlue relative top-[50px]"
+              : "border-b-1 border-LightGrayishBlue relative top-[8px]"
+          }></hr>
       </div>
       {active && (
         <p
