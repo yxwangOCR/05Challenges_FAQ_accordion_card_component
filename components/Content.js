@@ -15,15 +15,15 @@ const Content = () => {
   };
   const backgroundDesktop = {
     backgroundImage: `url(${bgDesktop.src})`,
-    backgroundPosition: "left -7rem top 9rem",
-    backgroundSize: "contain",
+    backgroundPosition: "left -10rem top 4rem",
+    backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    height: "39vh",
+   
   };
   return (
     <main className='bg-white rounded-3xl min-h-[535px] flex m-0 w-[330px] flex-col items-center md:flex-row md:justify-around md:w-[930px] md:min-h-[500px]'>
       <div
-        className='md:w-[50%] relative'
+        className='md:w-[50%] md:h-[535px] relative'
         style={width < 960 ? backgroundMobile : backgroundDesktop}>
         {width < 960 ? <MobileImage /> : <DesktopImage />}
       </div>
@@ -47,16 +47,3 @@ const Content = () => {
 };
 
 export default Content;
-/*
-
-<div
-          style={width < 960 ? backgroundMobile : backgroundDesktop}
-          className='bg-no-repeat md:w-[50%]'></div>
-
-<div
-      style={width < 960 ? backgroundMobile : backgroundDesktop}
-      className='bg-white bg-no-repeat rounded-3xl min-h-[535px] flex'>
-      </div>
-
-      <main className='m-0 w-[330px] min-h-[535px] rounded-3xl flex flex-col items-center md:flex-row md:justify-around md:w-[930px] md:min-h-[500px]'>
-*/
