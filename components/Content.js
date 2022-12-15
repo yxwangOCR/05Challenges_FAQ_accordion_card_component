@@ -72,7 +72,6 @@ const Content = () => {
                         : "border-b-1 border-LightGrayishBlue relative top-[8px]"
                     }></hr>
                 </div>
-
                 <p
                   onClick={() => handleToggle(index)}
                   className={
